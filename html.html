@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Html | WebLearn</title>
+    <link rel="stylesheet" href="html.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CodeMirror Editor Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/lint.min.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="index.html" class="brand">
+                <span>Web</span>Learn
+            </a>
+        </div>
+
+        <div class="head-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Course</a>
+            <a href="#">Practice</a>
+            <a href="#">Quizzes</a>
+            <a href="#">Tools</a>
+            <a href="#">About Us</a>
+            <a href="https://forms.gle/sQonif9G7UkDWfEu8" target="_blank" style="color: #38bdf8; font-weight: 600;">
+        <i class="fa-solid fa-paper-plane"></i> Submit Output
+    </a>
+        </div>
+
+        <a href="courses.html" class="back-headcourses">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Courses
+        </a>
+
+        <span class="header-label">HTML Tutorial</span>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside class="lesson-drawer" id="lessonDrawer">
+        <div class="drawer-header">
+            <h3>HTML Lessons</h3>
+            <button id="closeDrawer" class="close-drawer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-course">
+            <span class="course-label">Your Courses</span>
+            <h3><i class="fa-brands fa-html5"></i> Learn Html</h3>
+            <p>Learn basic structures of HTML step by step</p>
+        </div>
+
+        <nav class="lesson-navigation">
+            <span class="nav-heading">GETTING STARTED</span>
+            <button class="lesson-link active" data-lesson="0">
+                <span class="lesson-number">01</span>
+                <span>Introduction to HTML</span>
+            </button>
+
+            <span class="nav-heading">HTML BASICS</span>
+            <button class="lesson-link" data-lesson="1">
+                <span class="lesson-number">02</span>
+                <span>HTML Elements</span>
+            </button>
+            <button class="lesson-link" data-lesson="2">
+                <span class="lesson-number">03</span>
+                <span>HTML Attributes</span>
+            </button>
+            <button class="lesson-link" data-lesson="3">
+                <span class="lesson-number">04</span>
+                <span>HTML Values</span>
+            </button>
+            <button class="lesson-link" data-lesson="4">
+                <span class="lesson-number">05</span>
+                <span>HTML Button</span>
+            </button>
+
+            <span class="nav-heading">HTML CONTENT</span>
+            <button class="lesson-link" data-lesson="5">
+                <span class="lesson-number">06</span>
+                <span>HTML Links</span>
+            </button>
+            <button class="lesson-link" data-lesson="6">
+                <span class="lesson-number">07</span>
+                <span>HTML Lists</span>
+            </button>
+            <button class="lesson-link" data-lesson="7">
+                <span class="lesson-number">08</span>
+                <span>HTML Tables</span>
+            </button>
+            <button class="lesson-link" data-lesson="8">
+                <span class="lesson-number">09</span>
+                <span>HTML Forms</span>
+            </button>
+            <button class="lesson-link" data-lesson="9">
+                <span class="lesson-number">10</span>
+                <span>HTML Styles</span>
+            </button>
+
+            <span class="nav-heading">HTML MEDIA</span>
+            <button class="lesson-link" data-lesson="10">
+                <span class="lesson-number">11</span>
+                <span>HTML Images</span>
+            </button>
+            <button class="lesson-link" data-lesson="11">
+                <span class="lesson-number">12</span>
+                <span>HTML Audio</span>
+            </button>
+            <button class="lesson-link" data-lesson="12">
+                <span class="lesson-number">13</span>
+                <span>HTML Video</span>
+            </button>
+
+            <span class="nav-heading">HTML ATTRIBUTES</span>
+            <button class="lesson-link" data-lesson="13">
+                <span class="lesson-number">14</span>
+                <span>HTML href</span>
+            </button>
+            <button class="lesson-link" data-lesson="14">
+                <span class="lesson-number">15</span>
+                <span>HTML src</span>
+            </button>
+            <button class="lesson-link" data-lesson="15">
+                <span class="lesson-number">16</span>
+                <span>HTML class</span>
+            </button>
+            <button class="lesson-link" data-lesson="16">
+                <span class="lesson-number">17</span>
+                <span>HTML Id</span>
+            </button>
+
+            <span class="nav-heading">PRACTICE</span>
+            <button class="lesson-link" data-lesson="17">
+                <span class="lesson-number">*</span>
+                <span>Try It Yourself</span>
+            </button>
+
+            <div style="margin-top: 30px; padding: 20px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; text-align: center;">
+    <h3 style="color: #1e40af; margin-bottom: 8px; font-size: 16px;">Tapos na ba ang iyong project?</h3>
+    <p style="color: #475569; font-size: 12px; margin-bottom: 15px;">I-upload ang iyong mga file sa Google Drive, i-set sa "Anyone with the link can view", at i-submit dito.</p>
+    <a href="https://forms.gle/sQonif9G7UkDWfEu8" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600;">
+        <i class="fa-brands fa-google-drive"></i> Submit Your Project via Google Form
+    </a>
+</div>
+        </nav>
+
+        <a href="courses.html" class="back-courses">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Courses
+        </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+
+            <div class="lesson-topline">
+                <span class="lesson-category" id="lessonCategory">HTML Fundamentals</span>
+                <span id="lessonCounter">Lesson 1 of 18</span>
+            </div>
+            
+            <div class="lesson-heading">
+                <h1 id="lessonTitle">Introduction to HTML</h1>
+                <p id="lessonDescription">
+                    Discover the fundamentals of HTML, the backbone of web development. In this lesson, you'll learn what HTML is, its role in creating web pages, and how to structure content effectively.
+                </p>
+            </div>
+
+            <!-- Main lesson body -->
+            <section class="lesson-section" id="lessonBody">
+                <div class="intro-banner">
+                    <div>
+                        <span>Welcome to Web Development</span>
+                        <h2>Learn the Basics of HTML</h2>
+                        <p>In this lesson, you'll get a comprehensive introduction to HTML, the standard markup language for creating web pages.</p>
+                    </div>
+                    <div class="banner-icon">
+                        <i class="fa-solid fa-html5"></i>
+                    </div>
+                </div>
+
+                <h2>What is HTML?</h2>
+                <p>HTML stands for HyperText Markup Language. It is the standard markup language used to create the structure of a webpage.</p>
+                <p>HTML tells the browser what content to display, such as headings, paragraphs, images, links, lists, and more.</p>
+                
+                <div class="info-box">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div><strong>Remember:</strong> HTML is the foundation of every webpage.</div>
+                </div>
+            </section>
+
+            <!-- TAKEAWAYS -->
+            <section class="takeaways">
+                <h2><i class="fa-solid fa-bookmark"></i> Key Takeaways</h2>
+                <ul id="takeawayList">
+                    <li>HTML stands for HyperText Markup Language.</li>
+                    <li>HTML creates the structure of a webpage.</li>
+                    <li>HTML uses elements to organize content.</li>
+                    <li>A browser displays the HTML webpage.</li>
+                </ul>
+            </section>
+
+            <!-- COMMON MISTAKES -->
+            <section class="mistakes">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> Common Mistakes</h2>
+                <ul id="mistakeList">
+                    <li>Forgetting to close HTML tags.</li>
+                    <li>Saving the file with the wrong extension.</li>
+                    <li>Placing content outside the body element.</li>
+                </ul>
+            </section>
+
+            <!-- TRY IT YOURSELF -->
+            <section class="practice-section" id="practiceSection">
+                <div class="practice-heading">
+                    <span class="lesson-category">HANDS-ON PRACTICE</span>
+                    <h2>Try It Yourself</h2>
+                    <p>Write your HTML code, run it, and see the result in the preview window.</p>
+                </div>
+
+                <div class="editor-container">
+                    <div class="editor-topbar">
+                        <div class="editor-file">
+                            <i class="fa-brands fa-html5"></i>
+                            index.html
+                        </div>
+                        <div class="editor-actions">
+                            <button id="resetCode">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Reset
+                            </button>
+                            <button id="runCode" class="run-button">
+                                <i class="fa-solid fa-play"></i>
+                                Run Code
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Textarea for CodeMirror -->
+                    <textarea id="htmlEditor" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;I am learning HTML with WebLearn.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+                    <!-- ERROR EXPLANATION PANEL -->
+                    <div class="error-panel" id="errorPanel">
+                        <div class="error-panel-heading">
+                            <i class="fa-solid fa-shield-check"></i>
+                            Code Checker
+                            <span id="errorCount">Checking...</span>
+                        </div>
+                        <div id="errorList">
+                            <p>Checking your HTML code...</p>
+                        </div>
+                    </div>
+
+                    <div class="preview-heading">
+                        <span><i class="fa-solid fa-eye"></i> Live Preview</span>
+                        <span>Browser Output</span>
+                    </div>
+
+                    <iframe id="htmlPreview" title="HTML live preview" sandbox="allow-scripts"></iframe>
+                </div>
+            </section>
+
+            <!-- LESSON NAVIGATION -->
+            <div class="lesson-navigation-bottom">
+                <button id="previousLesson" class="previous-button" disabled>
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Previous
+                </button>
+                <button id="completeLesson" class="complete-button">
+                    Mark as Complete
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button id="nextLesson" class="next-button">
+                    Next Lesson
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CodeMirror Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+    
+    <!-- HTMLHint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmlhint/1.1.4/htmlhint.min.js"></script>
+    
+    <!-- CodeMirror Lint Addon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/lint.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="html.js"></script>
+</body>
+</html>

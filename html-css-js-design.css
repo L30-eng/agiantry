@@ -1,0 +1,159 @@
+.course-container  {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.course-card {
+    position: relative;
+    padding: 28px;
+    min-height:  365px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .35s;
+    display: flex;
+    flex-direction: column;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(30,60,120,.12);
+}
+
+.html-card {
+    border: 1px solid #ffc7b8;
+    background: linear-gradient(140deg, #fff5f1, #fff);
+}
+.css-card {
+    border: 1px solid #a9d3ff;
+    background: linear-gradient(140deg,  #eff7ff, #fff);
+}
+.js-card {
+    border: 1px solid #ffe483;
+    background: linear-gradient(140deg, #fffbea, #fff);
+}
+
+.course-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 22px;
+}
+.html-icon {
+    background: #e34f26;
+    color: white;
+}
+.css-icon {
+    background: #1572b6;
+    color: white;
+}
+.js-icon {
+    background: #f7df1e;
+    color: #151515;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.card-decoration {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.10;
+}
+.course-card h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+.course-card h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #355078;
+    margin-bottom: 17px;
+}
+.course-card > p {
+    font-size: 13px;
+    color: #536782;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.course-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    min-height: 48px;
+    padding: 12px 21px;
+    border-radius: 30px;
+    margin-top: 20px;
+     font-size: 12px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+.course-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+}
+.html-btn {
+    background: #e34f26;
+    color: white;
+}
+.css-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.js-btn {
+    background: #f7df1e;
+    color: #171717;
+}
+
+
+/* COURSES SECTION HEADING */
+.courses .section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* SECTION LABEL */
+.courses .section-label {
+    display: inline-block;
+    color: #2563eb;
+    background: #dbeafe;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* SECTION TITLE */
+.courses .section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+/* HIGHLIGHT "YOUR PATH" */
+.courses .section-heading h2 span {
+    color: #2563eb;
+}
+
+/* SECTION DESCRIPTION */
+.courses .section-heading p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
